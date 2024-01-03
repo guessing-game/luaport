@@ -10,7 +10,7 @@ LUA_LDFLAGS ?= $(shell pkg-config --libs luajit)
 
 DEFINES := -D_REENTRANT=PTHREADS
 #DEFINES += -DLUA_USE_APICHECK
-DEFINES += -DLUAP_BUFLEN=2048
+DEFINES += -DLUAP_BUFLEN=32768
 #DEFINES += -DLUAP_USERTUPLE # encode tuples as lua userdata
 #DEFINES += -DLUAP_NOINT # convert floats that are almost integers
 
